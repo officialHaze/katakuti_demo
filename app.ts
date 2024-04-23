@@ -42,6 +42,14 @@ class Board {
         block.style.border = "solid";
         block.style.borderColor = "black";
 
+        if (j === 0) block.style.borderLeft = "none";
+
+        if (j === 2) block.style.borderRight = "none";
+
+        if (i === 0) block.style.borderTop = "none";
+
+        if (i === 2) block.style.borderBottom = "none";
+
         // Add a click event to each block
         block.addEventListener("click", Game.handleClickOnBlock);
 
